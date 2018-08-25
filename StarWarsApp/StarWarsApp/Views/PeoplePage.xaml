@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsApp.Views.PeoplePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome"/>
+                <Label Text="{Binding People.name}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Height"/>
+                <Label Text="{Binding People.height}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Birth Year"/>
+                <Label Text="{Binding People.birth_year}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
